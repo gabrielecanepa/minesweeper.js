@@ -1,17 +1,22 @@
 # MinesweeperJS
 
+A quick JavaScript implementation of the [Minesweeper game](https://en.wikipedia.org/wiki/Minesweeper_(video_game)) 💣
+
 ## Usage
+
+To play the game, just open a cell with a single click and flag it with a right click.
+
+### Development
 
 Clone the repository on your computer. You must have [Node.js](https://nodejs.org) (> v4) and [Yarn](https://yarnpkg.com/lang/en/docs/install) installed:
 
 ```bash
-git clone git@github.com:gabrielecanepa/minesweeperJS.git
-cd minesweeperJS
-rm -rf .git
+git clone git@github.com:gabrielecanepa/minesweeper.js.git
+cd minesweeper.js
 yarn install
 ```
 
-Make sure you have `./node_modules/.bin` in your `$PATH`. This way you can run your server with:
+Make sure you have `./node_modules/.bin` in your `$PATH`. This way you can run a server with:
 
 ```bash
 webpack-dev-server
@@ -21,26 +26,30 @@ webpack-dev-server
 
 Some scripts are provided in your `package.json`.
 
-To start a local server on port `8080`:
+- Start a local server on port `8080`:
 
-```bash
-yarn start
-```
+  ```bash
+  yarn start
+  ```
 
-To lint all your JavaScript and CSS/SCSS files:
+- Lint all JavaScript, CSS and SCSS files:
 
-```bash
-yarn lint
-```
+  ```bash
+  yarn lint
+  ```
 
-To build your static files:
+- Build the static files:
 
-```bash
-yarn build
-```
+  ```bash
+  yarn build
+  ```
 
-To push the built files to the `gh-pages` branch and deploy on [GitHub Pages](https://pages.github.com):
+- Push the static files to the `gh-pages` branch and deploy to [GitHub Pages](https://pages.github.com):
 
-```bash
-yarn deploy
-```
+  ```bash
+  yarn deploy
+  ```
+
+## License
+
+[MIT](LICENSE)
